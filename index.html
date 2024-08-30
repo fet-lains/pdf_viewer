@@ -1,67 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no" />
+    <link
+      rel="icon"
+      href="favicons/favicon.ico" />
+    <link
+      rel="icon"
+      href="favicons/icon.svg"
+      type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="favicons/apple-touch-icon.png" />
+    <link
+      rel="manifest"
+      href="favicons/manifest.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="css/style.css" />
+    <title>PDF Viewer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="favicons/favicon.ico" />
-  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" />
-  <link rel="manifest" href="favicons/manifest.webmanifest" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>TITLE</title>
-</head>
-
-<body>
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <defs>
-      <symbol id="logo" viewBox="0 0 42 28">
-        <title>Logo Icon</title>
-        <path d="M0 11.2H30.9L17.6842 0H26.5263L42 14.56L26.5263 28H17.6842L30.9 16.8H0V11.2Z" fill="#BBBBBB" />
-      </symbol>
-    </defs>
-  </svg>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__body">
-        <button type="button" class="burger" aria-label="menu" aria-controls="navigation">
-          <span class="burger__inner"></span>
-        </button>
-        <a href="#home" class="logo header__logo" aria-hidden="true" tabindex="-1">
-          <svg width="42" height="28" class="logo__icon">
-            <use xlink:href="#logo" />
-          </svg>
-        </a>
-        <nav class="menu header__menu" id="navigation">
-          <ul class="menu__list" role="menubar">
-            <li class="menu__item" role="none">
-              <a href="#!" class="menu__link" role="menuitem"></a>
-            </li>
-          </ul>
-        </nav>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <h1 class="header__title">PDF Viewer Test</h1>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <section class="promo">
-      <div class="container"></div>
-    </section>
-  </main>
+    <main class="main">
+      <section class="some-section">
+        <div class="container">
+          <h2 class="some-section__title">Some random title</h2>
 
-  <footer class="footer">
-    <div class="container">
-      <small class="footer__copyright">
-        &copy;
-        <script>document.write(new Date().getFullYear())</script>
-      </small>
-    </div>
-  </footer>
+          <p class="some-section__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            perspiciatis similique architecto culpa exercitationem repellat
+            dolores optio placeat fugit voluptate? Doloremque perferendis
+            commodi nam facilis eveniet molestias neque possimus et! Provident
+            soluta voluptate id fugit harum? Veniam maiores, praesentium
+            dignissimos fugit perferendis repudiandae velit ex. Itaque impedit
+            excepturi eveniet quos, voluptates facere similique nesciunt
+            accusamus earum repellat mollitia dolore quasi. Omnis fuga odio non
+            dignissimos veritatis aliquid, optio perspiciatis explicabo neque,
+            ut asperiores totam voluptatem quae corrupti, libero soluta.
+            Repellat, sint deleniti! Assumenda, sit facere! Laboriosam in
+            dolores error accusantium! Quis error sequi labore corporis
+            distinctio sit, nesciunt vel esse cum reprehenderit facilis, eius
+            sunt, voluptas dolorem quidem animi excepturi minima aliquid dolore
+            repellendus. A sit qui tempora quis repellat. Eveniet rerum
+            excepturi iure et numquam sapiente quos saepe, sequi debitis quam
+            consectetur ut blanditiis recusandae iste animi nemo eaque cum
+            dignissimos illo non praesentium corrupti fugit? Facilis, maxime
+            repellat.
+          </p>
+        </div>
+      </section>
 
-  <script src="js/app.js"></script>
-</body>
+      <section class="pdf-viewer">
+        <div class="container">
+          <iframe
+            class="pdf-viewer__iframe"
+            src="https://dermatologicalbeauty.loreal.com.ru/files/2024/morozova.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+            scrolling="no"
+            width="100%"
+            height="600px">
+            <p>
+              Your browser does not support iframes.
+              <a
+                href="https://dermatologicalbeauty.loreal.com.ru/files/2024/morozova.pdf">
+                Download the PDF
+              </a>
+              instead.
+            </p>
+          </iframe>
+        </div>
+      </section>
+    </main>
 
+    <footer class="footer">
+      <div class="container">
+        <small class="footer__copyright">
+          &copy; PDF Viewer Test
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </small>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
 </html>

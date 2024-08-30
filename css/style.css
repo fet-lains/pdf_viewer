@@ -282,25 +282,6 @@ sup {
   top: -0.5em;
 }
 
-@font-face {
-  font-family: 'CeraPro';
-  font-style: normal;
-  font-weight: 300;
-  src: local('CeraPro'), local('CeraPro-Thin'),
-    url('../fonts/CeraPro-Thin.woff2') format('woff2'),
-    url('../fonts/CeraPro-Thin.woff') format('woff');
-  font-display: swap;
-}
-@font-face {
-  font-family: 'CeraPro';
-  font-style: normal;
-  font-weight: 400;
-  src: local('CeraPro'), local('CeraPro-Regular'),
-    url('../fonts/CeraPro-Regular.woff2') format('woff2'),
-    url('../fonts/CeraPro-Regular.woff') format('woff');
-  font-display: swap;
-}
-
 :root {
   --fontPrimary: Inter, Helvetica, 'Trebuchet MS', Tahoma, sans-serif;
   --black: #131313;
@@ -322,17 +303,6 @@ body {
   color: var(--black);
 }
 
-.ibg {
-  position: relative;
-}
-.ibg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .container {
   max-width: 1260px;
   width: 100%;
@@ -340,28 +310,26 @@ body {
   margin-left: auto;
   padding: 0 30px;
 }
-.fluid-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
 }
-.hyphenate {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0 20px;
 }
-.screen-reader {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+
+.some-section {
+  padding: 20px 0;
+}
+
+.some-section__title {
+  text-align: center;
+  margin-bottom: 20px;
 }
